@@ -33,7 +33,7 @@ const siteContent = {
   },
   contact: {
     "contact-h4": "Contact",
-    address: "123 Way 456 Street Somewhere, USA",
+    address: "123 Way 456 Street\r\n Somewhere, USA",
     phone: "1 (888) 888-8888",
     email: "sales@greatidea.io",
   },
@@ -69,7 +69,7 @@ let picture1 = document.querySelector("#cta-img");
 picture1.src = "img/header-img.png";
 
 let text1 = document.querySelector(".cta-text h1");
-text1.textContent = "DOM \n IS  AWESOME";
+text1.innerHTML = "DOM <br> IS <br> AWESOME";
 
 let text2 = document.querySelector(".cta-text button");
 text2.textContent = "Get Started";
