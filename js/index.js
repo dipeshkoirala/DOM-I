@@ -93,6 +93,7 @@ let pArray = [
   siteContent["contact"]["address"],
   siteContent["contact"]["phone"],
   siteContent["contact"]["email"],
+  siteContent["footer"]["copyright"],
 ];
 
 for (var i = 0; i < content1.length; i++) {
