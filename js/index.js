@@ -49,13 +49,22 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 //for Header
 let dataArr = ["Product", "Vision", "Features", "About", "Contact"];
 let anchor = document.querySelectorAll("Nav a");
-
+let anchorCol = document.querySelectorAll("Nav a");
+anchorCol.forEach((el) => (el.style.color = "#00FF00"));
 Array.from(anchor);
 
-for (var i = 0; i < anchor.length - 1; i++) {
+for (var i = 0; i < anchor.length; i++) {
   anchor[i].textContent = dataArr[i];
 }
+let newContent = document.createElement("abc");
+newContent.textContent = "1st -dk";
+let Nava = document.querySelector("Nav");
+Nava.appendChild(newContent);
 
+let newContent1 = document.createElement("abc");
+newContent1.textContent = "2nd -dk";
+let Nava1 = document.querySelector("Nav");
+Nava1.prepend(newContent1);
 let picture1 = document.querySelector("#cta-img");
 picture1.src = "img/header-img.png";
 
