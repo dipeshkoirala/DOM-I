@@ -91,6 +91,8 @@ let pArray = [
   siteContent["main-content"]["vision-content"],
   // siteContent["main-content"]["product-content"],
   siteContent["contact"]["address"],
+  siteContent["contact"]["phone"],
+  siteContent["contact"]["email"],
 ];
 
 for (var i = 0; i < content1.length; i++) {
